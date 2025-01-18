@@ -1,35 +1,134 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jaime Martínez - Neurotecnología</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaime Martinez Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        #about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        #projects .project {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        #projects .project h3 {
+            margin-top: 0;
+        }
+
+        #projects .project button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #projects .project button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Jaime Martínez</h1>
-    <p>Explorando el futuro de la neurotecnología</p>
-  </header>
-  <main>
-    <section>
-      <h2>Sobre mí</h2>
-      <p>Hola, soy Jaime Martínez, un apasionado de la neurotecnología. Aquí encontrarás información sobre mis proyectos y mi trayectoria profesional.</p>
-    </section>
-    <section>
-      <h2>Proyectos</h2>
-      <ul>
-        <li><a href="#">Proyecto 1</a>: Descripción breve del proyecto.</li>
-        <li><a href="#">Proyecto 2</a>: Descripción breve del proyecto.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contacto</h2>
-      <p>¡Conecta conmigo a través de <a href="mailto:tuemail@ejemplo.com">mi correo electrónico</a>!</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Jaime Martínez</p>
-  </footer>
+
+<header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contact">Contact Info</a>
+    </nav>
+</header>
+
+<section id="about">
+    <img src="https://via.placeholder.com/150" alt="Jaime Martinez">
+    <h1>Jaime Martinez</h1>
+    <p>Hello! I'm Jaime, a passionate neurotechnology enthusiast dedicated to exploring the future of human potential.</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+        <h3>Project 1: Neural Pathways Analysis</h3>
+        <p>A cutting-edge project focused on mapping neural connections in the human brain.</p>
+        <button onclick="alert('More information about Project 1')">More Info</button>
+    </div>
+    <div class="project">
+        <h3>Project 2: Brain-Computer Interfaces</h3>
+        <p>An innovative project creating interfaces to connect the brain with digital devices.</p>
+        <button onclick="alert('More information about Project 2')">More Info</button>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Info</h2>
+    <p>Email: <a href="mailto:jaimemartinez@example.com">jaimemartinez@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/jaimemartinez" target="_blank">linkedin.com/in/jaimemartinez</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Jaime Martinez. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
